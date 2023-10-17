@@ -7,4 +7,20 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 }
 
+
+function add_admin_link($items, $args) {
+    
+    if (is_user_logged_in() && $args->theme_location == 'main_menu'){
+
+        $admin_item = '<li id="menu-item-74" itemprop="name" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="http://planty.local/wp-admin" itemprop="url" class="hfe-menu-item">Admin</a></li>';
+        $menu_items = preg_split('/<\/li>/', $items);
+        array_splice($menu_items, 1, 0, array($admin_item));
+        $items = implode('</li>', $menu_items) . '</li>';
+      }
+      return $items;
+      
+  }
+
+  add_filter( 'wp_nav_menu_items', 'add_admin_link', 10, 2 );
+
 ?>

@@ -1,101 +1,334 @@
+/* FORMULAIRE DE CONTACT */
+
 .form-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-    width: 383px;
-    color: black;
-  }
-
-  .form-label {
-    margin-bottom: 13px;
-    margin-top: 22px;
-
-  }
-  
-  input {
-    border-radius: 7px;
-    width: 383px;
-    height: 71px;
-    border: none;
-  }
-
-  textarea {
-    border-radius: 7px;
-    width: 383px;
-    height: 237px;
-    border: none;
-  }
-  
-.cta{
-    margin-top: 24px;
-    margin-bottom: 42px;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 383px;
+  color: black;
 }
 
-  input[type='submit'] {
+.form-label {
+  margin-bottom: 13px;
+  margin-top: 22px;
+}
+  
+.form-contact input {
+  border-radius: 7px;
+  width: 383px;
+  height: 71px;
+  border: none;
+}
+
+textarea {
+  border-radius: 7px;
+  width: 383px;
+  height: 237px;
+  border: none;
+}
+  
+.cta{
+  margin-top: 24px;
+  margin-bottom: 42px;
+  padding-bottom: 30px;
+}
+
+.form-submit input[type='submit'] {
+  display: flex;
+  width: 198px;
+  height: 55px;
+  padding: 9px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #E0B9B4;
+}
+
+.form-submit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* QUANTITE DES COMMANDES */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity input {
+  width: 51px;
+  height: 56px;
+  display: block;
+  padding-left: 20px;
+  border: none;
+  border-radius: 0px;
+  color: pink;
+
+}
+
+input[type=number] {
+  width: 51px;
+  height: 56px;
+}
+
+
+/* FORMULAIRE DE COMMANDE */
+
+.form-commande {
+  display: flex;
+  flex-direction: row;
+  width: 860x;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 53px;
+}
+
+.form-commande h2 {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700; 
+  text-transform: none;
+}
+
+.form-commande label {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400; 
+  text-transform: none;
+}
+
+.form-commande .form-label {
+  margin-bottom: 13px;
+  margin-top: 30px;
+}
+
+.form-commande input {
+  border-radius: 7px;
+  width: 383px;
+  height: 71px;
+  border: none;
+}
+
+.form-commande .information {
+  border-right: 1px solid #fff;
+  padding-right: 45px;
+}
+
+.form-commande .livraison {
+  padding-left: 45px;
+}
+
+.form-command-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 93px;
+}
+
+.form-command-submit input[type='submit'] {
+  display: flex;
+  width: 198px;
+  height: 55px;
+  padding: 9px 57px 9px 56px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #E0B9B4;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+  .form-commande {
+    display: flex;
+    flex-direction: row;
+    width: 800x;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 53px;
+  }
+  
+  .form-commande h2 {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700; 
+    text-transform: none;
+  }
+  
+  .form-commande label {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400; 
+    text-transform: none;
+  }
+  
+  .form-commande .form-label {
+    margin-bottom: 13px;
+    margin-top: 30px;
+  }
+  
+  .form-commande input {
+    border-radius: 7px;
+    width: 320px;
+    height: 50px;
+    border: none;
+  }
+  
+  .form-commande .information {
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+  }
+  
+  .form-commande .livraison {
+    padding-left: 20px;
+  }
+  
+  .form-command-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 93px;
+  }
+  
+  .form-command-submit input[type='submit'] {
+    display: flex;
     width: 198px;
     height: 55px;
+    padding: 9px 57px 9px 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
     border-radius: 5px;
-
     background: #E0B9B4;
   }
 
-.form-submit{
+}
+
+@media screen and (max-width: 767px){
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    color: black;
+  }
+  
+  .form-label {
+    margin-bottom: 13px;
+    margin-top: 22px;
+  }
+    
+  .form-contact input {
+    border-radius: 7px;
+    width: 200px;
+    height: 71px;
+    border: none;
+  }
+  
+  textarea {
+    border-radius: 7px;
+    width: 200px;
+    height: 100;
+    border: none;
+  }
+    
+  .cta{
+    margin-top: 24px;
+    margin-bottom: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .form-submit input[type='submit'] {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #E0B9B4;
+  }
+  
+  .form-submit{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-@media screen and (max-width: 767px) {
-    .form-contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    
-        width: 310px;
-        color: black;
-      }
-    
-      .form-label {
-        margin-bottom: 13px;
-        margin-top: 22px;
-    
-      }
-      
-      input {
-        border-radius: 7px;
-        width: 310px;
-        height: 71px;
-        border: none;
-      }
-    
-      textarea {
-        border-radius: 7px;
-        width: 310px;
-        height: 237px;
-        border: none;
-      }
-      
-    .cta{
-        margin-top: 24px;
-        margin-bottom: 42px;
-        padding-bottom: 30px;
-    }
-    
-      input[type='submit'] {
-        width: 120px;
-        height: 55px;
-        border-radius: 5px;
-    
-        background: #E0B9B4;
-      }
-    
-    .form-submit{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .form-commande {
+    display: flex;
+    flex-direction: column;
+    width: 700x;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 53px;
+  }
+  
+  .form-commande h2 {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700; 
+    text-transform: none;
+  }
+  
+  .form-commande label {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400; 
+    text-transform: none;
+  }
+  
+  .form-commande .form-label {
+    margin-bottom: 13px;
+    margin-top: 30px;
+  }
+  
+  .form-commande input {
+    border-radius: 7px;
+    width: 300px;
+    height: 50px;
+    border: none;
+  }
+  
+  .form-commande .information {
+    border-right: none;
+    padding-right: 0px;
+  }
+  
+  .form-commande .livraison {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  
+  .form-command-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 93px;
+  }
+  
+  .form-command-submit input[type='submit'] {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #E0B9B4;
+  }
 }
