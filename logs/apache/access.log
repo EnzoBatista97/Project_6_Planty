@@ -23640,3 +23640,9 @@
 127.0.0.1 - - [20/Oct/2023:11:46:52 +0200] "GET /wp-content/themes/Planty/css/theme.css?ver=1697795209 HTTP/1.0" 200 10398
 127.0.0.1 - - [20/Oct/2023:11:47:04 +0200] "GET / HTTP/1.0" 200 80228
 127.0.0.1 - - [20/Oct/2023:11:47:04 +0200] "GET /wp-content/themes/Planty/css/theme.css?ver=1697795222 HTTP/1.0" 200 10398
+127.0.0.1 - - [20/Oct/2023:11:48:27 +0200] "GET / HTTP/1.0" 200 53668
+127.0.0.1 - - [20/Oct/2023:11:48:29 +0200] "GET /wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.17 HTTP/1.0" 304 -
+127.0.0.1 - - [20/Oct/2023:11:48:29 +0200] "GET /wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.17 HTTP/1.0" 304 -
+127.0.0.1 - - [20/Oct/2023:11:48:29 +0200] "GET /wp-content/themes/Planty/css/theme.css?ver=1697795271 HTTP/1.0" 200 10398
+127.0.0.1 - - [20/Oct/2023:11:48:32 +0200] "GET /wp-content/uploads/2023/10/result.svg HTTP/1.0" 304 -
+127.0.0.1 - - [20/Oct/2023:11:49:24 +0200] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
