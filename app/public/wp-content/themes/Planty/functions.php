@@ -10,7 +10,7 @@ function theme_enqueue_styles()
 
 function add_admin_link($items, $args) {
     
-    if (is_user_logged_in() && $args->theme_location == 'locations-main-menu'){
+    if (is_user_logged_in() && $args->theme_location  == 'main-menu'){
         $admin_item = '<li id="menu-item-74" itemprop="name" class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu"><a href="http://planty.local/wp-admin" itemprop="url" class="hfe-menu-item">Admin</a></li>';
         $items.=$admin_item;
     }

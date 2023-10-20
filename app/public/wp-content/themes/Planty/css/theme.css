@@ -1,3 +1,85 @@
+/* HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFF;
+  width: auto;
+}
+
+#site-title {
+  display: none;
+}
+
+.lien-icone {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.nav-button{
+  display: flex;
+  flex-direction: row;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding-right: 60px;
+  text-decoration: none;
+  font-style: normal;
+  color: #000;
+  font-family: Syne;font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #000;
+  font-family: Syne;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header {
+  display: none;
+}
+
+
+.command-button {
+  background: #DC9F96;
+  width: 236px;
+  height: 80px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Syne;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
 /* FORMULAIRE DE CONTACT */
 
 .form-contact {
@@ -61,19 +143,13 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .quantity input {
-  width: 51px;
-  height: 56px;
+  width: 51px !important;
+  height: 56px !important;
   display: block;
   padding-left: 20px;
   border: none;
-  border-radius: 0px;
-  color: pink;
+  border-radius: 4px 0px 0px 4px !important;
 
-}
-
-input[type=number] {
-  width: 51px;
-  height: 56px;
 }
 
 
@@ -145,8 +221,90 @@ input[type=number] {
 }
 
 
-/* RESPONSIVE */
+/* RESPONSIVE TABLETTE */
+
 @media screen and (max-width: 1024px){
+
+    /* HEADER*/
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: auto;
+  }
+
+  #site-title {
+    display: none;
+  }
+
+  .lien-icone {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+  }
+
+  .nav-button{
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 31px;
+    padding-bottom: 30px;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-style: normal;
+    color: #000;
+    font-family: Syne;font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  a, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    color: #000;
+    font-family: Syne;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .header {
+    display: none;
+  }
+
+
+  .command-button {
+    background: #DC9F96;
+    width: 200px;
+    height: 80px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
   .form-commande {
     display: flex;
     flex-direction: row;
@@ -214,7 +372,100 @@ input[type=number] {
 
 }
 
+/* RESPONSIVE SMARTPHONE */
+
 @media screen and (max-width: 767px){
+      /* HEADER*/
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #FFF;
+        width: auto;
+      }
+    
+      #site-title {
+        display: none;
+      }
+    
+      .lien-icone {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-left: 15px;
+        padding-top: 15px;
+      }
+
+      .lien-icone img {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+    
+      .nav-button{
+        display: flex;
+        flex-direction: row;
+      }
+    
+      nav{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 15px;
+
+      }
+    
+      .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-right: 15px;
+        text-decoration: none;
+        font-style: normal;
+        color: #000;
+        font-family: Syne;font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    
+      a, a:visited {
+        color: black;
+        text-decoration: none;
+      }
+    
+      .menu a:hover {
+        color: #000;
+        font-family: Syne;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    
+      .header {
+        display: none;
+      }
+    
+    
+      .command-button {
+        background: #DC9F96;
+        width: 100px;
+        height: cover;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Syne;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+
   .form-contact {
     display: flex;
     flex-direction: column;
@@ -331,4 +582,6 @@ input[type=number] {
     border-radius: 5px;
     background: #E0B9B4;
   }
+
+
 }
